@@ -1,11 +1,11 @@
 const quizData = [
     {
-        question: 'How old is Daniel?',
-        a: '10',
-        b: '23',
-        c: '20',
-        d: '12',
-        correct: 'c',
+        question: "How old is Daniel?",
+        a: "10",
+        b: "23",
+        c: "20",
+        d: "12",
+        correct: "d",
     },
     {
     question: 'What is the most intresting programming language?',
@@ -16,39 +16,39 @@ const quizData = [
         correct: 'b',
     },
     {
-    question: 'Who is the owner of Twitter?',
-        a: 'Bill Gates',
-        b: 'Donald Trump',
-        c: 'Daniel Ruvcheski',
-        d: 'Elon Musk',
-        correct: 'd',
+    question: "Who is the owner of Twitter?",
+        a: "Bill Gates",
+        b: "Donald Trump",
+        c: "Daniel Ruvcheski",
+        d: "Elon Musk",
+        correct: "d",
     },
     {
-        question: 'What does CSS stand for?',
-        a: 'Cascading Style Sheet',
-        b: 'Canadian Socer Society',
-        c: 'HyperText Markup Language',
-        d: 'Comunity for Social Service',
-        correct: 'a',
+        question: "What does CSS stand for?",
+        a: "Cascading Style Sheet",
+        b: "Canadian Socer Society",
+        c: "HyperText Markup Language",
+        d: "Comunity for Social Service",
+        correct: "a",
     },
     {
-        question: 'Who is the best Handball player?',
-        a: 'Micheal Hansen',
-        b: 'Kiril Lazarov',
-        c: 'Nikola Karabatic',
-        d: 'Momir Ilic',
-        correct: 'b',
+        question: "Who is the best Handball player?",
+        a: "Micheal Hansen",
+        b: "Kiril Lazarov",
+        c: "Nikola Karabatic",
+        d: "Momir Ilic",
+        correct: "b",
     },
 ];
 
-const quiz = document.getElementById('quiz');
-const answerEls = document.querySelectorAll('.answer');
-const questionEl = document.getElementById('question');
-const a_text = document.getElementById('a_text');
-const b_text = document.getElementById('b_text');
-const c_text = document.getElementById('c_text');
-const d_text = document.getElementById('d_text');
-const submitBtn = document.getElementById('submit');
+const quiz = document.getElementById("quiz");
+const answerEls = document.querySelectorAll(".answer");
+const questionEl = document.getElementById("question");
+const a_text = document.getElementById("a_text");
+const b_text = document.getElementById("b_text");
+const c_text = document.getElementById("c_text");
+const d_text = document.getElementById("d_text");
+const submitBtn = document.getElementById("submit");
 
 let currentQuiz = 0;
 let score = 0;
@@ -64,8 +64,7 @@ function loadQuiz() {
     b_text.innerText = currentQuizData.b;
     c_text.innerText = currentQuizData.c;
     d_text.innerText = currentQuizData.d;
-
-    currentQuiz++;
+    
 }
 
 function getSelected() {
